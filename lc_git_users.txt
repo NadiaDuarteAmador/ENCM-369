@@ -1,2 +1,3 @@
 Nadia,DuarteAmador,paulaamador02@outlook.com,NadiaDuarteAmador,2021_ENCM369
 ENCM369,JasonLong,jrlong@ucalgary.ca,UofCencm369,2021_ENCM369
+Netra,Patel,netra.patel@ucalgary.ca,Netra-Patel,2021_ENCM369
