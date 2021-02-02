@@ -1,2 +1,8 @@
 Nadia,DuarteAmador,paulaamador02@outlook.com,NadiaDuarteAmador,2021_ENCM369
 ENCM369,JasonLong,jrlong@ucalgary.ca,UofCencm369,2021_ENCM369
+Netra,Patel,netra.patel@ucalgary.ca,Netra-Patel,2021_ENCM369
+Goni,Matzliach,goni.matzliach@ucalgary.ca,goniUofC,2021_ENCM369
+Ivan Paul,Serrano,ivanpaul.serrano@ucalgary.ca,serranoip,2021_ENCM369
+Ryan,Baker,ryan.baker1@ucalgary.ca,ryanbakerucalgary,2021_ENCM369
+Jenna,McCormick,jenna.mccormick@ucalgary.ca,JennaMcCormick,2021_ENCM369
+Viet Trung,Dau,viettrung.dau@ucalgary.ca,vtdau,2021_ENCM369
