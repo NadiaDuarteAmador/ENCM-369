@@ -94,8 +94,17 @@ Promises:
 */
 void UserAppRun(void)
 {
-
-
+    LATA = 0x80;                                        /* Will keep Led in RA7 ON. */
+    u32 u32Delay;
+    u32 u32Counter;
+    
+    for (u32Counter=1; u32Counter<=64; u32Counter++);   /* Loop will count from 1 to 64. */
+    {
+        LATA++;                                         /* Adds one to LATA every time the loop runs. */
+        u32Delay=FCY/4;                                 /* Frequency for the delay, T= 250ms. */
+        _delay(u32Delay);
+    }
+    
 } /* end UserAppRun */
 
 

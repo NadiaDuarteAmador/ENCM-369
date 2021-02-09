@@ -41,6 +41,9 @@
 [v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]
 "95
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
+"45585 C:/Program Files/Microchip/MPLABX/v5_45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q43.h
+"45585
+[v _LATA LATA `VEuc  1 e 1 @1214 ]
 "14 C:\Github\2021_ENCM369\main.c
 [v _G_u32SystemTime1ms G_u32SystemTime1ms `VEul  1 e 4 0 ]
 "15
@@ -58,6 +61,8 @@
 [v _UserAppRun UserAppRun `(v  1 e 1 0 ]
 {
 "99
+[v UserAppRun@u32Counter u32Counter `ul  1 a 4 6 ]
+"108
 } 0
 "76
 [v _UserAppInitialize UserAppInitialize `(v  1 e 1 0 ]
