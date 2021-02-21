@@ -94,6 +94,22 @@ Promises:
 */
 void UserAppRun(void)
 {
+ static u32 u32ButtonState=0;
+ u32 u32Counter;
+   
+    for (u32Counter=1; u32Counter<=64; u32Counter++) 
+    {
+    if ( ((PORTB & 0x20) == 0x20) && (u32ButtonState == 0))
+    {
+        LATA++;
+        u32ButtonState=1;
+    }
+    if ( ((PORTB & 0x20) == 0x00) && (u32ButtonState == 1))
+    {
+        u32ButtonState=0;
+    }
+   
+    }
 
 
 } /* end UserAppRun */
