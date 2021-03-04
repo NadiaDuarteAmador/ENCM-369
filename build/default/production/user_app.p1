@@ -2616,8 +2616,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;user_app.c: 109:         LATA= u8Pattern[u8Index];
 [e = _LATA *U + &U F15922 * -> F15923 `ux -> -> # *U &U F15922 `ui `ux ]
 "110
-[; ;user_app.c: 110:         u8Index++;
-[e ++ F15923 -> -> 1 `i `uc ]
+[; ;user_app.c: 110:         u8Index= u8Index + 1;
+[e = F15923 -> + -> F15923 `i -> 1 `i `uc ]
 "111
 [; ;user_app.c: 111:         u16Counter=0;
 [e = F15924 -> -> 0 `i `us ]
@@ -2630,8 +2630,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 2274 ]
 {
 "114
-[; ;user_app.c: 114:         u16Counter++;
-[e ++ F15924 -> -> 1 `i `us ]
+[; ;user_app.c: 114:         u16Counter= u16Counter +1;
+[e = F15924 -> + -> F15924 `ui -> -> 1 `i `ui `us ]
 "115
 [; ;user_app.c: 115:     }
 }
@@ -2648,21 +2648,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _u16Timer `us ~T0 @X0 1 r1 ]
 [f ]
 "121
-[; ;user_app.c: 121:     T0CON0 &= 0x7F;
-[e =& _T0CON0 -> -> 127 `i `Vuc ]
+[; ;user_app.c: 121:     u16 u16Count=0xFFFF - u16Timer;
+[v _u16Count `us ~T0 @X0 1 a ]
+[e = _u16Count -> - -> 65535 `ui -> _u16Timer `ui `us ]
 "122
-[; ;user_app.c: 122:     TMR0H = (0xFFFF-u16Timer)>>8;
-[e = _TMR0H -> >> - -> 65535 `ui -> _u16Timer `ui -> 8 `i `uc ]
+[; ;user_app.c: 122:     T0CON0 = 0x10;
+[e = _T0CON0 -> -> 16 `i `uc ]
 "123
-[; ;user_app.c: 123:     TMR0L = (0XFFFF-u16Timer) &0x00FF;
-[e = _TMR0L -> & - -> 65535 `ui -> _u16Timer `ui -> -> 255 `i `ui `uc ]
+[; ;user_app.c: 123:     TMR0H = u16Count>>8;
+[e = _TMR0H -> >> -> _u16Count `ui -> 8 `i `uc ]
 "124
-[; ;user_app.c: 124:     PIR3 &= 0x7F;
-[e =& _PIR3 -> -> 127 `i `Vuc ]
+[; ;user_app.c: 124:     TMR0L = u16Count<<8;
+[e = _TMR0L -> << -> _u16Count `ui -> 8 `i `uc ]
 "125
-[; ;user_app.c: 125:     T0CON0 |= 0x80;
-[e =| _T0CON0 -> -> 128 `i `Vuc ]
-"127
-[; ;user_app.c: 127: }
+[; ;user_app.c: 125:     PIR3 &= 0x7F;
+[e =& _PIR3 -> -> 127 `i `Vuc ]
+"126
+[; ;user_app.c: 126:     T0CON0 =0x90;
+[e = _T0CON0 -> -> 144 `i `uc ]
+"128
+[; ;user_app.c: 128: }
 [e :UE 2277 ]
 }

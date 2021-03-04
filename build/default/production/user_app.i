@@ -27329,21 +27329,22 @@ void UserAppRun(void)
             u8Index=0;
         }
         LATA= u8Pattern[u8Index];
-        u8Index++;
+        u8Index= u8Index + 1;
         u16Counter=0;
         }
     else {
-        u16Counter++;
+        u16Counter= u16Counter +1;
     }
 
 }
 
 void TimeXus(u16 u16Timer) {
 
-    T0CON0 &= 0x7F;
-    TMR0H = (0xFFFF-u16Timer)>>8;
-    TMR0L = (0XFFFF-u16Timer) &0x00FF;
+    u16 u16Count=0xFFFF - u16Timer;
+    T0CON0 = 0x10;
+    TMR0H = u16Count>>8;
+    TMR0L = u16Count<<8;
     PIR3 &= 0x7F;
-    T0CON0 |= 0x80;
+    T0CON0 =0x90;
 
 }

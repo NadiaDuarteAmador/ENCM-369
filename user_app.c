@@ -107,22 +107,23 @@ void UserAppRun(void)
             u8Index=0;
         }
         LATA= u8Pattern[u8Index];
-        u8Index++;
+        u8Index= u8Index + 1;
         u16Counter=0;
         }
     else {
-        u16Counter++;
+        u16Counter= u16Counter +1;
     }  
     
 } /* end UserAppRun */
 
 void TimeXus(u16 u16Timer) {
     
-    T0CON0 &= 0x7F; //Disable timer during configuration
-    TMR0H = (0xFFFF-u16Timer)>>8; // Shifting to make 16-bit number fit in 8-bit register
-    TMR0L = (0XFFFF-u16Timer) &0x00FF; // PreloadmTMR0L 
+    u16 u16Count=0xFFFF - u16Timer;
+    T0CON0 = 0x10; //Disable timer during configuration   
+    TMR0H = u16Count>>8; // Shifting to make 16-bit number fit in 8-bit register
+    TMR0L = u16Count<<8; // PreloadmTMR0L 
     PIR3 &= 0x7F; //Clear TMR0IF
-    T0CON0 |= 0x80; //Enable timer    
+    T0CON0 =0x90; //Enable timer    
     
 }
 
