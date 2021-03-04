@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Thu Mar 04 09:16:03 2021
+                                                                                               Thu Mar 04 09:25:02 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	18F27Q43
@@ -325,12 +325,12 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    291  01FFA2                     
    292                           ;user_app.c: 100:     static u8 u8Pattern[6] = {0x21, 0x31, 0x29, 0x25, 0x23, 0x21};;use
       +                          r_app.c: 101:     static u8 u8Index=0;;user_app.c: 102:     static u16 u16Counter=0;;use
-      +                          r_app.c: 104:     if (u16Counter==500) {
+      +                          r_app.c: 104:     if (u16Counter>=500) {
    293  01FFA2  0EF4               	movlw	244
-   294  01FFA4  180D               	xorwf	UserAppRun@u16Counter^(0+1280),w,c
-   295  01FFA6  E106               	bnz	u11
-   296  01FFA8  040E               	decf	(UserAppRun@u16Counter+1)^(0+1280),w,c
-   297  01FFAA  A4D8               	btfss	status,2,c
+   294  01FFA4  5C0D               	subwf	UserAppRun@u16Counter^(0+1280),w,c
+   295  01FFA6  0E01               	movlw	1
+   296  01FFA8  580E               	subwfb	(UserAppRun@u16Counter+1)^(0+1280),w,c
+   297  01FFAA  A0D8               	btfss	status,0,c
    298  01FFAC  EFDA  F0FF         	goto	u11
    299  01FFB0  EFDC  F0FF         	goto	u10
    300  01FFB4                     u11:
@@ -1328,7 +1328,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Thu Mar 04 09:16:03 2021
+Symbol Table                                                                                   Thu Mar 04 09:25:02 2021
 
      __size_of_SysTickSetup 0022                          l21 FF2E                          l15 FECA  
                         l24 FEB4                          l18 FEEE                          l54 FF8A  

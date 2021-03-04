@@ -101,7 +101,7 @@ void UserAppRun(void)
     static u8 u8Index=0;
     static u16 u16Counter=0;
     
-    if (u16Counter==500) {
+    if (u16Counter>=500) {
         if (u8Index==6)
         {
             u8Index=0;

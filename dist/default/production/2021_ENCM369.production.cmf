@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\nadia\AppData\Local\Temp\s53s.o
+$C:\Users\nadia\AppData\Local\Temp\s4ak.o
 idloc IDLOC 5 200000 200000 20 1
 init CODE 0 1FFFC 1FFFC 4 1
 reset_vec CODE 0 0 0 4 1
@@ -150,32 +150,32 @@ $dist/default/production\2021_ENCM369.production.o
 1FF8A text0 CODE >65:C:\ENCM 369\2021_ENCM369\main.c
 1FF8A text0 CODE >66:C:\ENCM 369\2021_ENCM369\main.c
 1FF98 text0 CODE >67:C:\ENCM 369\2021_ENCM369\main.c
-1FF30 cinit CODE >5110:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF30 cinit CODE >5112:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF30 cinit CODE >5115:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF30 cinit CODE >5149:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF32 cinit CODE >5150:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF34 cinit CODE >5151:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF36 cinit CODE >5152:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF38 cinit CODE >5153:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF3A cinit CODE >5154:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF3C cinit CODE >5155:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF40 cinit CODE >5156:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF44 cinit CODE >5157:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF44 cinit CODE >5158:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF46 cinit CODE >5159:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF4A cinit CODE >5160:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF4C cinit CODE >5161:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF4E cinit CODE >5162:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF50 cinit CODE >5166:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF54 cinit CODE >5167:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF56 cinit CODE >5168:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF56 cinit CODE >5169:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF58 cinit CODE >5170:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF5A cinit CODE >5171:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF5C cinit CODE >5177:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF5C cinit CODE >5179:C:\Users\nadia\AppData\Local\Temp\s53s.s
-1FF5E cinit CODE >5180:C:\Users\nadia\AppData\Local\Temp\s53s.s
+1FF30 cinit CODE >5110:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF30 cinit CODE >5112:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF30 cinit CODE >5115:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF30 cinit CODE >5149:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF32 cinit CODE >5150:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF34 cinit CODE >5151:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF36 cinit CODE >5152:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF38 cinit CODE >5153:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF3A cinit CODE >5154:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF3C cinit CODE >5155:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF40 cinit CODE >5156:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF44 cinit CODE >5157:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF44 cinit CODE >5158:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF46 cinit CODE >5159:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF4A cinit CODE >5160:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF4C cinit CODE >5161:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF4E cinit CODE >5162:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF50 cinit CODE >5166:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF54 cinit CODE >5167:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF56 cinit CODE >5168:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF56 cinit CODE >5169:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF58 cinit CODE >5170:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF5A cinit CODE >5171:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF5C cinit CODE >5177:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF5C cinit CODE >5179:C:\Users\nadia\AppData\Local\Temp\s4ak.s
+1FF5E cinit CODE >5180:C:\Users\nadia\AppData\Local\Temp\s4ak.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -194,25 +194,25 @@ __Hspace_1 51B 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 __Hspace_4 60000A 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\2021_ENCM369.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\nadia\AppData\Local\Temp\s53s.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\nadia\AppData\Local\Temp\s4ak.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\2021_ENCM369.production.o
 __end_of_TimeXus 1FF0E 0 CODE 0 text3 dist/default/production\2021_ENCM369.production.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\2021_ENCM369.production.o
 _LATA 4BE 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 _PIR3 4B1 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
-___sp 0 0 STACK 2 stack C:\Users\nadia\AppData\Local\Temp\s53s.o
+___sp 0 0 STACK 2 stack C:\Users\nadia\AppData\Local\Temp\s4ak.o
 _main 1FF62 0 CODE 0 text0 dist/default/production\2021_ENCM369.production.o
-start 1FFFC 0 CODE 0 init C:\Users\nadia\AppData\Local\Temp\s53s.o
+start 1FFFC 0 CODE 0 init C:\Users\nadia\AppData\Local\Temp\s4ak.o
 __size_of_main 0 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\2021_ENCM369.production.o
 __size_of_SystemSleep 0 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\2021_ENCM369.production.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\2021_ENCM369.production.o
-__accesstop 560 0 ABS 0 - C:\Users\nadia\AppData\Local\Temp\s53s.o
-intlevel0 0 0 CODE 0 text C:\Users\nadia\AppData\Local\Temp\s53s.o
-intlevel1 0 0 CODE 0 text C:\Users\nadia\AppData\Local\Temp\s53s.o
-intlevel2 0 0 CODE 0 text C:\Users\nadia\AppData\Local\Temp\s53s.o
-intlevel3 0 0 CODE 0 text C:\Users\nadia\AppData\Local\Temp\s53s.o
+__accesstop 560 0 ABS 0 - C:\Users\nadia\AppData\Local\Temp\s4ak.o
+intlevel0 0 0 CODE 0 text C:\Users\nadia\AppData\Local\Temp\s4ak.o
+intlevel1 0 0 CODE 0 text C:\Users\nadia\AppData\Local\Temp\s4ak.o
+intlevel2 0 0 CODE 0 text C:\Users\nadia\AppData\Local\Temp\s4ak.o
+intlevel3 0 0 CODE 0 text C:\Users\nadia\AppData\Local\Temp\s4ak.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\2021_ENCM369.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\2021_ENCM369.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\2021_ENCM369.production.o
@@ -223,8 +223,8 @@ _ANSELA 400 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 _G_u32SystemTime1s 505 0 COMRAM 1 bssCOMRAM dist/default/production\2021_ENCM369.production.o
 TimeXus@u16Count 519 0 COMRAM 1 cstackCOMRAM dist/default/production\2021_ENCM369.production.o
 TimeXus@u16Timer 517 0 COMRAM 1 cstackCOMRAM dist/default/production\2021_ENCM369.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\nadia\AppData\Local\Temp\s53s.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\nadia\AppData\Local\Temp\s53s.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\nadia\AppData\Local\Temp\s4ak.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\nadia\AppData\Local\Temp\s4ak.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\2021_ENCM369.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\2021_ENCM369.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\2021_ENCM369.production.o
@@ -290,7 +290,7 @@ __Hbank36 0 0 ABS 0 bank36 dist/default/production\2021_ENCM369.production.o
 __Hbank37 0 0 ABS 0 bank37 dist/default/production\2021_ENCM369.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\2021_ENCM369.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\2021_ENCM369.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\nadia\AppData\Local\Temp\s53s.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\nadia\AppData\Local\Temp\s4ak.o
 _SystemSleep 1FEB4 0 CODE 0 text4 dist/default/production\2021_ENCM369.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\2021_ENCM369.production.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/production\2021_ENCM369.production.o
@@ -388,8 +388,8 @@ _UserAppInitialize 1FECC 0 CODE 0 text2 dist/default/production\2021_ENCM369.pro
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\2021_ENCM369.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\2021_ENCM369.production.o
 UserAppRun@u8Pattern 511 0 COMRAM 1 dataCOMRAM dist/default/production\2021_ENCM369.production.o
-stackhi 25FF 0 ABS 0 - C:\Users\nadia\AppData\Local\Temp\s53s.o
-stacklo 560 0 ABS 0 - C:\Users\nadia\AppData\Local\Temp\s53s.o
+stackhi 25FF 0 ABS 0 - C:\Users\nadia\AppData\Local\Temp\s4ak.o
+stacklo 560 0 ABS 0 - C:\Users\nadia\AppData\Local\Temp\s4ak.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\2021_ENCM369.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\2021_ENCM369.production.o
@@ -413,7 +413,7 @@ __ptext5 1FF0E 0 CODE 0 text5 dist/default/production\2021_ENCM369.production.o
 __ptext6 1FEDC 0 CODE 0 text6 dist/default/production\2021_ENCM369.production.o
 __ptext7 1FEBC 0 CODE 0 text7 dist/default/production\2021_ENCM369.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\2021_ENCM369.production.o
-__ramtop 2600 0 RAM 0 ramtop C:\Users\nadia\AppData\Local\Temp\s53s.o
+__ramtop 2600 0 RAM 0 ramtop C:\Users\nadia\AppData\Local\Temp\s4ak.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\2021_ENCM369.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\2021_ENCM369.production.o
 _ClockSetup 1FEBC 0 CODE 0 text7 dist/default/production\2021_ENCM369.production.o

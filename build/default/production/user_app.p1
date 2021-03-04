@@ -2596,8 +2596,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `us
 ]
 "104
-[; ;user_app.c: 104:     if (u16Counter==500) {
-[e $ ! == -> F15924 `ui -> -> 500 `i `ui 2274  ]
+[; ;user_app.c: 104:     if (u16Counter>=500) {
+[e $ ! >= -> F15924 `ui -> -> 500 `i `ui 2274  ]
 {
 "105
 [; ;user_app.c: 105:         if (u8Index==6)
