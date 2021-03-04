@@ -2571,8 +2571,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _UserAppRun ]
 [f ]
 "100
-[; ;user_app.c: 100:     static u8 u8Pattern[6] = {0x21, 0x31, 0x29, 0x25, 0x23, 0x21};
-[v F15922 `uc ~T0 @X0 -> 6 `i s u8Pattern ]
+[; ;user_app.c: 100:     static u8 au8Pattern[6] = {0x21, 0x31, 0x29, 0x25, 0x23, 0x21};
+[v F15922 `uc ~T0 @X0 -> 6 `i s au8Pattern ]
 [i F15922
 :U ..
 -> -> 33 `i `uc
@@ -2613,7 +2613,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 2275 ]
 "109
-[; ;user_app.c: 109:         LATA= u8Pattern[u8Index];
+[; ;user_app.c: 109:         LATA= au8Pattern[u8Index];
 [e = _LATA *U + &U F15922 * -> F15923 `ux -> -> # *U &U F15922 `ui `ux ]
 "110
 [; ;user_app.c: 110:         u8Index= u8Index + 1;
@@ -2640,33 +2640,33 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;user_app.c: 117: }
 [e :UE 2273 ]
 }
-"119
-[; ;user_app.c: 119: void TimeXus(u16 u16Timer) {
+"133
+[; ;user_app.c: 133: void TimeXus(u16 u16Timer_) {
 [v _TimeXus `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _TimeXus ]
-[v _u16Timer `us ~T0 @X0 1 r1 ]
+[v _u16Timer_ `us ~T0 @X0 1 r1 ]
 [f ]
-"121
-[; ;user_app.c: 121:     u16 u16Count=0xFFFF - u16Timer;
+"135
+[; ;user_app.c: 135:     u16 u16Count=0xFFFF - u16Timer_;
 [v _u16Count `us ~T0 @X0 1 a ]
-[e = _u16Count -> - -> 65535 `ui -> _u16Timer `ui `us ]
-"122
-[; ;user_app.c: 122:     T0CON0 = 0x10;
+[e = _u16Count -> - -> 65535 `ui -> _u16Timer_ `ui `us ]
+"136
+[; ;user_app.c: 136:     T0CON0 = 0x10;
 [e = _T0CON0 -> -> 16 `i `uc ]
-"123
-[; ;user_app.c: 123:     TMR0H = u16Count>>8;
+"137
+[; ;user_app.c: 137:     TMR0H = u16Count>>8;
 [e = _TMR0H -> >> -> _u16Count `ui -> 8 `i `uc ]
-"124
-[; ;user_app.c: 124:     TMR0L = u16Count<<8;
-[e = _TMR0L -> << -> _u16Count `ui -> 8 `i `uc ]
-"125
-[; ;user_app.c: 125:     PIR3 &= 0x7F;
+"138
+[; ;user_app.c: 138:     TMR0L & 0xFF;
+[e & -> _TMR0L `i -> 255 `i ]
+"139
+[; ;user_app.c: 139:     PIR3 &= 0x7F;
 [e =& _PIR3 -> -> 127 `i `Vuc ]
-"126
-[; ;user_app.c: 126:     T0CON0 =0x90;
+"140
+[; ;user_app.c: 140:     T0CON0 =0x90;
 [e = _T0CON0 -> -> 144 `i `uc ]
-"128
-[; ;user_app.c: 128: }
+"142
+[; ;user_app.c: 142: }
 [e :UE 2277 ]
 }

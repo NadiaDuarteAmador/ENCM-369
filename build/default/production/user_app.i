@@ -27319,7 +27319,7 @@ void UserAppInitialize(void)
 # 98 "user_app.c"
 void UserAppRun(void)
 {
-    static u8 u8Pattern[6] = {0x21, 0x31, 0x29, 0x25, 0x23, 0x21};
+    static u8 au8Pattern[6] = {0x21, 0x31, 0x29, 0x25, 0x23, 0x21};
     static u8 u8Index=0;
     static u16 u16Counter=0;
 
@@ -27328,7 +27328,7 @@ void UserAppRun(void)
         {
             u8Index=0;
         }
-        LATA= u8Pattern[u8Index];
+        LATA= au8Pattern[u8Index];
         u8Index= u8Index + 1;
         u16Counter=0;
         }
@@ -27337,13 +27337,13 @@ void UserAppRun(void)
     }
 
 }
+# 133 "user_app.c"
+void TimeXus(u16 u16Timer_) {
 
-void TimeXus(u16 u16Timer) {
-
-    u16 u16Count=0xFFFF - u16Timer;
+    u16 u16Count=0xFFFF - u16Timer_;
     T0CON0 = 0x10;
     TMR0H = u16Count>>8;
-    TMR0L = u16Count<<8;
+    TMR0L & 0xFF;
     PIR3 &= 0x7F;
     T0CON0 =0x90;
 

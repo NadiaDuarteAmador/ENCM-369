@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2_31\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\2021_ENCM369.production.sym \
   --cmf=dist/default/production\2021_ENCM369.production.cmf -z -Q18F27Q43 \
-  -oC:\Users\nadia\AppData\Local\Temp\s4ak.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\nadia\AppData\Local\Temp\s828.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/2021_ENCM369.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=0560h-025FFh -pstack=STACK \
   -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh -ASMALLCONST=02600h-026FFhx474 \
@@ -31,7 +31,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\nadia\AppData\Local\Temp\s4ak.o \
+  C:\Users\nadia\AppData\Local\Temp\s828.o \
   dist/default/production\2021_ENCM369.production.o 
 
 Object code version is 3.11
@@ -41,7 +41,7 @@ Machine type is 18F27Q43
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\nadia\AppData\Local\Temp\s4ak.o
+C:\Users\nadia\AppData\Local\Temp\s828.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
                 init                              1FFFC    1FFFC        4     FFFE       0
@@ -49,19 +49,19 @@ C:\Users\nadia\AppData\Local\Temp\s4ak.o
 dist/default/production\2021_ENCM369.production.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
-                text7                             1FEBC    1FEBC       10     FF5E       0
-                text6                             1FEDC    1FEDC       14     FF6E       0
+                text7                             1FEBE    1FEBE       10     FF5F       0
+                text6                             1FEDE    1FEDE       14     FF6F       0
                 text5                             1FF0E    1FF0E       22     FF87       0
-                text4                             1FEB4    1FEB4        2     FF5A       0
-                text3                             1FEF0    1FEF0       1E     FF78       0
-                text2                             1FECC    1FECC       10     FF66       0
+                text4                             1FEB6    1FEB6        2     FF5B       0
+                text3                             1FEF2    1FEF2       1C     FF79       0
+                text2                             1FECE    1FECE       10     FF67       0
                 text1                             1FFA2    1FFA2       5A     FFD1       0
                 text0                             1FF62    1FF62       40     FFB1       0
                 cstackCOMRAM                        517      517        4      501       1
                 dataCOMRAM                          511      511        6      501       1
                 bssCOMRAM                           501      501       10      501       1
                 cinit                             1FF30    1FF30       32     FF98       0
-                idataCOMRAM                       1FEB6    1FEB6        6    1FEB6       0
+                idataCOMRAM                       1FEB8    1FEB8        6    1FEB8       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -69,16 +69,16 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   CODE           
                 init                              1FFFC    1FFFC        4         0
                 reset_vec                             0        0        4         0
-                text7                             1FEBC    1FEBC       10         0
-                text6                             1FEDC    1FEDC       14         0
+                text7                             1FEBE    1FEBE       10         0
+                text6                             1FEDE    1FEDE       14         0
                 text5                             1FF0E    1FF0E       22         0
-                text4                             1FEB4    1FEB4        2         0
-                text3                             1FEF0    1FEF0       1E         0
-                text2                             1FECC    1FECC       10         0
+                text4                             1FEB6    1FEB6        2         0
+                text3                             1FEF2    1FEF2       1C         0
+                text2                             1FECE    1FECE       10         0
                 text1                             1FFA2    1FFA2       5A         0
                 text0                             1FF62    1FF62       40         0
                 cinit                             1FF30    1FF30       32         0
-                idataCOMRAM                       1FEB6    1FEB6        6         0
+                idataCOMRAM                       1FEB8    1FEB8        6         0
 
         CLASS   CONST          
 
@@ -181,12 +181,12 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
                 bssCOMRAM                      000501  00001A  00051B       501       1  COMRAM  
-                text4                          01FEB4  000002  01FEB6      FF5A       0  CODE    
-                idataCOMRAM                    01FEB6  000006  01FEBC     1FEB6       0  CODE    
-                text7                          01FEBC  000010  01FECC      FF5E       0  CODE    
-                text2                          01FECC  000010  01FEDC      FF66       0  CODE    
-                text6                          01FEDC  000014  01FEF0      FF6E       0  CODE    
-                text3                          01FEF0  00001E  01FF0E      FF78       0  CODE    
+                text4                          01FEB6  000002  01FEB8      FF5B       0  CODE    
+                idataCOMRAM                    01FEB8  000006  01FEBE     1FEB8       0  CODE    
+                text7                          01FEBE  000010  01FECE      FF5F       0  CODE    
+                text2                          01FECE  000010  01FEDE      FF67       0  CODE    
+                text6                          01FEDE  000014  01FEF2      FF6F       0  CODE    
+                text3                          01FEF2  00001C  01FF0E      FF79       0  CODE    
                 text5                          01FF0E  000022  01FF30      FF87       0  CODE    
                 cinit                          01FF30  000032  01FF62      FF98       0  CODE    
                 text0                          01FF62  000040  01FFA2      FFB1       0  CODE    
@@ -231,44 +231,44 @@ UNUSED ADDRESS RANGES
         BANK8            000800-0008FF              100
         BANK9            000900-0009FF              100
         BIGRAM           00051B-0025FF             20E5
-        CODE             000004-01FEB3            1FEB0
+        CODE             000004-01FEB5            1FEB2
         COMRAM           00051B-00055F               45
         CONFIG           30000A-300011                8
-        CONST            000004-01FEB3            1FEB0
+        CONST            000004-01FEB5            1FEB2
         EEDATA           380000-3803FF              400
         MEDIUMCONST      002600-00FFFF             DA00
-                         012600-01FEB3             D8B4
+                         012600-01FEB5             D8B6
         RAM              000560-0025FF              100
         SFR              000000-0004FF              100
-        SMALLCONST       002600-01FEB3              100
+        SMALLCONST       002600-01FEB5              100
         STACK            000560-0025FF             20A0
 
                                   Symbol Table
 
 TimeXus@u16Count            cstackCOMRAM 000519
-TimeXus@u16Timer            cstackCOMRAM 000517
+TimeXus@u16Timer_           cstackCOMRAM 000517
+UserAppRun@au8Pattern       dataCOMRAM   000511
 UserAppRun@u16Counter       bssCOMRAM    00050D
 UserAppRun@u8Index          bssCOMRAM    00050F
-UserAppRun@u8Pattern        dataCOMRAM   000511
 _ANSELA                     (abs)        000400
-_ClockSetup                 text7        01FEBC
+_ClockSetup                 text7        01FEBE
 _G_u32SystemFlags           bssCOMRAM    000501
 _G_u32SystemTime1ms         bssCOMRAM    000509
 _G_u32SystemTime1s          bssCOMRAM    000505
 _G_u8UserAppFlags           bssCOMRAM    000510
-_GpioSetup                  text6        01FEDC
+_GpioSetup                  text6        01FEDE
 _LATA                       (abs)        0004BE
 _PIR3                       (abs)        0004B1
 _PORTA                      (abs)        0004CE
 _SysTickSetup               text5        01FF0E
-_SystemSleep                text4        01FEB4
+_SystemSleep                text4        01FEB6
 _T0CON0                     (abs)        00031A
 _T0CON1                     (abs)        00031B
 _TMR0H                      (abs)        000319
 _TMR0L                      (abs)        000318
 _TRISA                      (abs)        0004C6
-_TimeXus                    text3        01FEF0
-_UserAppInitialize          text2        01FECC
+_TimeXus                    text3        01FEF2
+_UserAppInitialize          text2        01FECE
 _UserAppRun                 text1        01FFA2
 __HRAM                      (abs)        000000
 __Habs1                     abs1         000000
@@ -462,12 +462,12 @@ ___rparam_used              (abs)        000001
 ___sp                       stack        000000
 __accesstop                 (abs)        000560
 __activetblptr              (abs)        000000
-__end_of_ClockSetup         text7        01FECC
-__end_of_GpioSetup          text6        01FEF0
+__end_of_ClockSetup         text7        01FECE
+__end_of_GpioSetup          text6        01FEF2
 __end_of_SysTickSetup       text5        01FF30
-__end_of_SystemSleep        text4        01FEB6
+__end_of_SystemSleep        text4        01FEB8
 __end_of_TimeXus            text3        01FF0E
-__end_of_UserAppInitialize  text2        01FEDC
+__end_of_UserAppInitialize  text2        01FEDE
 __end_of_UserAppRun         text1        01FFFC
 __end_of__initialization    cinit        01FF5C
 __end_of_main               text0        01FFA2
@@ -477,15 +477,15 @@ __pbssCOMRAM                bssCOMRAM    000501
 __pcinit                    cinit        01FF30
 __pcstackCOMRAM             cstackCOMRAM 000517
 __pdataCOMRAM               dataCOMRAM   000511
-__pidataCOMRAM              idataCOMRAM  01FEB6
+__pidataCOMRAM              idataCOMRAM  01FEB8
 __ptext0                    text0        01FF62
 __ptext1                    text1        01FFA2
-__ptext2                    text2        01FECC
-__ptext3                    text3        01FEF0
-__ptext4                    text4        01FEB4
+__ptext2                    text2        01FECE
+__ptext3                    text3        01FEF2
+__ptext4                    text4        01FEB6
 __ptext5                    text5        01FF0E
-__ptext6                    text6        01FEDC
-__ptext7                    text7        01FEBC
+__ptext6                    text6        01FEDE
+__ptext7                    text7        01FEBE
 __ramtop                    ramtop       002600
 __size_of_ClockSetup        (abs)        000000
 __size_of_GpioSetup         (abs)        000000
@@ -605,9 +605,9 @@ Total ram usage:        0 bytes
 
  *************** function _TimeXus *****************
  Defined at:
-		line 119 in file "user_app.c"
+		line 133 in file "user_app.c"
  Parameters:    Size  Location     Type
-  u16Timer        2    0[COMRAM] unsigned short 
+  u16Timer_       2    0[COMRAM] unsigned short 
  Auto vars:     Size  Location     Type
   u16Count        2    2[COMRAM] unsigned short 
  Return value:  Size  Location     Type
@@ -753,10 +753,10 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 encm369_pic18.c
-		_GpioSetup     		CODE           	1FEDC	0000	20
-		_SystemSleep   		CODE           	1FEB4	0000	2
+		_GpioSetup     		CODE           	1FEDE	0000	20
+		_SystemSleep   		CODE           	1FEB6	0000	2
 		_SysTickSetup  		CODE           	1FF0E	0000	34
-		_ClockSetup    		CODE           	1FEBC	0000	16
+		_ClockSetup    		CODE           	1FEBE	0000	16
 
 encm369_pic18.c estimated size: 72
 
@@ -771,9 +771,9 @@ main.c
 main.c estimated size: 64
 
 user_app.c
-		_TimeXus       		CODE           	1FEF0	0000	30
+		_TimeXus       		CODE           	1FEF2	0000	28
 		_UserAppRun    		CODE           	1FFA2	0000	90
-		_UserAppInitialize		CODE           	1FECC	0000	16
+		_UserAppInitialize		CODE           	1FECE	0000	16
 
-user_app.c estimated size: 136
+user_app.c estimated size: 134
 

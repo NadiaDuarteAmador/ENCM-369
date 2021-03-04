@@ -97,31 +97,45 @@ Promises:
 */
 void UserAppRun(void)
 {
-    static u8 u8Pattern[6] = {0x21, 0x31, 0x29, 0x25, 0x23, 0x21};
+    static u8 au8Pattern[6] = {0x21, 0x31, 0x29, 0x25, 0x23, 0x21}; //pattern design
     static u8 u8Index=0;
     static u16 u16Counter=0;
     
-    if (u16Counter>=500) {
-        if (u8Index==6)
+    if (u16Counter>=500) {  
+        if (u8Index==6)   //end of the pattern array is reached
         {
-            u8Index=0;
+            u8Index=0;   //re-start array pattern
         }
-        LATA= u8Pattern[u8Index];
-        u8Index= u8Index + 1;
+        LATA= au8Pattern[u8Index];   //LATA gets the different index values of the array
+        u8Index= u8Index + 1;        
         u16Counter=0;
         }
     else {
-        u16Counter= u16Counter +1;
+        u16Counter= u16Counter +1;    //incrementing counter by 1
     }  
     
 } /* end UserAppRun */
 
-void TimeXus(u16 u16Timer) {
+/*!----------------------------------------------------------------------------------------------------------------------
+void TimeXus(u16Microseconds_)
+Sets Timer0 to count to u16Microseconds_
+ 
+Requires:
+- Timer0 configured such that each timer tick is 1 microsecond
+- u16Microseconds_ is the value in microseconds to time from 1 to 65535
+Promises:
+- Pre-loads TMR0H:L to clock out desired period
+- TMR0IF cleared
+- Timer0 enabled
+ */
+
+
+void TimeXus(u16 u16Timer_) {
     
-    u16 u16Count=0xFFFF - u16Timer;
+    u16 u16Count=0xFFFF - u16Timer_;
     T0CON0 = 0x10; //Disable timer during configuration   
     TMR0H = u16Count>>8; // Shifting to make 16-bit number fit in 8-bit register
-    TMR0L = u16Count<<8; // PreloadmTMR0L 
+    TMR0L & 0xFF; // PreloadmTMR0L 
     PIR3 &= 0x7F; //Clear TMR0IF
     T0CON0 =0x90; //Enable timer    
     
