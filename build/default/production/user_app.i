@@ -27289,6 +27289,7 @@ void SystemSleep(void);
 # 27 "./user_app.h"
 void UserAppInitialize(void);
 void UserAppRun(void);
+void TimeXus (u16 u16Timer);
 # 106 "./configuration.h" 2
 # 26 "user_app.c" 2
 
@@ -27310,20 +27311,39 @@ extern volatile u32 G_u32SystemFlags;
 void UserAppInitialize(void)
 {
 
+    LATA= 0x80;
+    T0CON0= 0x90;
+    T0CON1= 0x54;
 
 }
-# 95 "user_app.c"
+# 98 "user_app.c"
 void UserAppRun(void)
 {
-    LATA = 0x80;
-    u32 u32Delay;
-    u32 u32Counter;
+    static u8 u8Pattern[6] = {0x21, 0x31, 0x29, 0x25, 0x23, 0x21};
+    static u8 u8Index=0;
+    static u16 u16Counter=0;
 
-    for (u32Counter=1; u32Counter<=64; u32Counter++);
-    {
-        LATA++;
-        u32Delay=(u32)64000000/4/4;
-        _delay(u32Delay);
+    if (u16Counter==500) {
+        if (u8Index==6)
+        {
+            u8Index=0;
+        }
+        LATA= u8Pattern[u8Index];
+        u8Index++;
+        u16Counter=0;
+        }
+    else {
+        u16Counter++;
     }
+
+}
+
+void TimeXus(u16 u16Timer) {
+
+    T0CON0 &= 0x7F;
+    TMR0H = (0xFFFF-u16Timer)>>8;
+    TMR0L = (0XFFFF-u16Timer) &0x00FF;
+    PIR3 &= 0x7F;
+    T0CON0 |= 0x80;
 
 }

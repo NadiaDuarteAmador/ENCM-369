@@ -76,6 +76,9 @@ Promises:
 void UserAppInitialize(void)
 {
 
+    LATA= 0x80; //RA7 digital high
+    T0CON0= 0x90; // 16 bit timer0 1:1
+    T0CON1= 0x54; // Synchronous timer0 1:16
 
 } /* end UserAppInitialize() */
 
@@ -94,20 +97,34 @@ Promises:
 */
 void UserAppRun(void)
 {
-    LATA = 0x80;                                        /* Will keep Led in RA7 ON. */
-    u32 u32Delay;
-    u32 u32Counter;
+    static u8 u8Pattern[6] = {0x21, 0x31, 0x29, 0x25, 0x23, 0x21};
+    static u8 u8Index=0;
+    static u16 u16Counter=0;
     
-    for (u32Counter=1; u32Counter<=64; u32Counter++)   /* Loop will count from 1 to 64. */
-    {
-        LATA++;                                         /* Adds one to LATA every time the loop runs. */
-        u32Delay=FCY/4;                                 /* Frequency for the delay, T= 250ms. */
-        _delay(u32Delay);
-    }
+    if (u16Counter==500) {
+        if (u8Index==6)
+        {
+            u8Index=0;
+        }
+        LATA= u8Pattern[u8Index];
+        u8Index++;
+        u16Counter=0;
+        }
+    else {
+        u16Counter++;
+    }  
     
 } /* end UserAppRun */
 
-
+void TimeXus(u16 u16Timer) {
+    
+    T0CON0 &= 0x7F; //Disable timer during configuration
+    TMR0H = (0xFFFF-u16Timer)>>8; // Shifting to make 16-bit number fit in 8-bit register
+    TMR0L = (0XFFFF-u16Timer) &0x00FF; // PreloadmTMR0L 
+    PIR3 &= 0x7F; //Clear TMR0IF
+    T0CON0 |= 0x80; //Enable timer    
+    
+}
 
 /*------------------------------------------------------------------------------------------------------------------*/
 /*! @privatesection */                                                                                            
