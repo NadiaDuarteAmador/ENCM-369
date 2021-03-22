@@ -140,15 +140,17 @@ void TimeXus(u16 u16Timer_) {
     
 {
   
-    T0CON0 &= 0x7F;
- u16Timer_ = 0xFFFF - u16Timer_;
-    TMR0L = u16Timer_ & 0xFF;
+    T0CON0 &= 0x7F;                     //Disable timer
+    u16Timer_ = 0xFFFF - u16Timer_;
+    
+    TMR0L = u16Timer_ & 0xFF;           //Preload THR0 and TMR0L 
     TMR0H = u16Timer_ >> 0x08;
-    PIR3 &= 0x7F;
+    
+    PIR3 &= 0x7F;                       //Clear TMR01F, enable timer 0
     T0CON0 |= 0x80;
 }
     
-}
+}  /*end TimeXus()
 
 /*------------------------------------------------------------------------------------------------------------------*/
 /*! @privatesection */                                                                                            

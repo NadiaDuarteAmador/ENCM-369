@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Mon Mar 22 17:36:22 2021
+                                                                                               Mon Mar 22 17:40:21 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	18F27Q43
@@ -708,25 +708,25 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    654  01FE30  0103               	movlb	3	; () banked
    655  01FE32  9F1A               	bcf	26,7,b	;volatile
    656                           
-   657                           ;user_app.c: 144:  u16Timer_ = 0xFFFF - u16Timer_;
+   657                           ;user_app.c: 144:     u16Timer_ = 0xFFFF - u16Timer_;
    658  01FE34  1E0F               	comf	TimeXus@u16Timer_^(0+1280),f,c
    659  01FE36  1E10               	comf	(TimeXus@u16Timer_+1)^(0+1280),f,c
    660  01FE38                     
    661                           ; BSR set to: 3
-   662                           ;user_app.c: 145:     TMR0L = u16Timer_ & 0xFF;
+   662                           ;user_app.c: 146:     TMR0L = u16Timer_ & 0xFF;
    663  01FE38  0061  F43C  F318   	movff	TimeXus@u16Timer_,792	;volatile
    664  01FE3E                     
    665                           ; BSR set to: 3
-   666                           ;user_app.c: 146:     TMR0H = u16Timer_ >> 0x08;
+   666                           ;user_app.c: 147:     TMR0H = u16Timer_ >> 0x08;
    667  01FE3E  5010               	movf	(TimeXus@u16Timer_+1)^(0+1280),w,c
    668  01FE40  6F19               	movwf	25,b	;volatile
    669  01FE42                     
    670                           ; BSR set to: 3
-   671                           ;user_app.c: 147:     PIR3 &= 0x7F;
+   671                           ;user_app.c: 149:     PIR3 &= 0x7F;
    672  01FE42  9EB1               	bcf	177,7,c	;volatile
    673  01FE44                     
    674                           ; BSR set to: 3
-   675                           ;user_app.c: 148:     T0CON0 |= 0x80;
+   675                           ;user_app.c: 150:     T0CON0 |= 0x80;
    676  01FE44  8F1A               	bsf	26,7,b	;volatile
    677  01FE46                     
    678                           ; BSR set to: 3
@@ -1528,7 +1528,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Mon Mar 22 17:36:22 2021
+Symbol Table                                                                                   Mon Mar 22 17:40:21 2021
 
      __size_of_SysTickSetup 0022                          l21 FE80                          l15 FE06  
                         l24 FDF6                          l18 FE18                          l82 FE2E  

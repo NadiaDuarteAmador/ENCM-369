@@ -27357,9 +27357,11 @@ void TimeXus(u16 u16Timer_) {
 {
 
     T0CON0 &= 0x7F;
- u16Timer_ = 0xFFFF - u16Timer_;
+    u16Timer_ = 0xFFFF - u16Timer_;
+
     TMR0L = u16Timer_ & 0xFF;
     TMR0H = u16Timer_ >> 0x08;
+
     PIR3 &= 0x7F;
     T0CON0 |= 0x80;
 }
