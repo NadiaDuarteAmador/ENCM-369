@@ -58,7 +58,7 @@ void main(void)
 #if 1
     HEARTBEAT_OFF();
     SystemSleep(); 
-    TimeXus(10);
+    TimeXus(10);    //1.129 kHz 
      while (PIR3bits.TMR0IF==0)
      HEARTBEAT_ON();
 #endif

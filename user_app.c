@@ -118,7 +118,7 @@ Promises:
 */
 void UserAppRun(void)
 {
-   DAC1DATL = UserApp_au8sinTable[u8Index += 4];
+   DAC1DATL = UserApp_au8sinTable[u8Index += 4];   // Assign array values to DAC and increment index
     
 } /* end UserAppRun */
 
