@@ -239,7 +239,7 @@ void UserAppRun(void)
 {
 //NOTES 
     static u16 u32Count = 0; 
-    static u8  u8Index = 0;               // Array of notes
+    static u8  u8Index = 0;               // Array of notes index 
           
     u16 au16Notes[] = {C4,NN,C4,NN,G4,NN,G4,NN,A4,NN,A4,NN,G4,NN,F4,NN,F4,NN,E4,NN,E4,NN,D4,NN,D4,NN,C4,NN};
     u16 au16Note[] = {N4,RT,N4,RT,N4,RT,N4,RT,N4,RT,N4,RT,N2,RT,N4,RT,N4,RT,N4,RT,N4,RT,N4,RT,N4,RT,N4,RT};
@@ -251,7 +251,7 @@ void UserAppRun(void)
         {
             u8Index = 0;      //Repeat song (back to index 0)
         }
-        u8Index++;                      //increment index to the next note    
+        u8Index++;                      //Increment index to the next note    
         
         InterruptTimerXus(au16Notes[u8Index],true);
     }
