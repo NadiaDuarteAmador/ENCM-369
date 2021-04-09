@@ -4,15 +4,15 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>configuration.h</itemPath>
-      <itemPath>encm369_pic18.h</itemPath>
       <itemPath>interrupts.h</itemPath>
-      <itemPath>main.h</itemPath>
       <itemPath>music.h</itemPath>
       <itemPath>pic18f27q43.h</itemPath>
+      <itemPath>xc.h</itemPath>
+      <itemPath>configuration.h</itemPath>
+      <itemPath>encm369_pic18.h</itemPath>
+      <itemPath>main.h</itemPath>
       <itemPath>typedefs.h</itemPath>
       <itemPath>user_app.h</itemPath>
-      <itemPath>xc.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -21,8 +21,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>encm369_pic18.c</itemPath>
       <itemPath>interrupts.c</itemPath>
+      <itemPath>encm369_pic18.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>user_app.c</itemPath>
     </logicalFolder>

@@ -122,8 +122,10 @@ void __interrupt(irq(IRQ_TMR1), high_priority) TMR1_ISR(void)
    In this case, we load the next value of the sinusoid.
    KEEP THIS SHORT!
   **********************************************************************/
- 
-  
+
+    
+  DAC1DATL = G_au8UserAppsinTable[u8Index];
+  u8Index += 4;
   
   /*********************************************************************
    End of event handling
